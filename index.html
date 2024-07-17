@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMetric WebPage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+       .icon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: gray;
+        }
+
+        .input-with-icon {
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body >
+    <div class="bg-yellow-200">
+
+    <!-- Navbar -->
+    <nav class="bg-white fixed top-0 w-full shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-20 w-40" src="./Timetrail_logo-removebg-preview.png" alt="TMetric Logo">
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Why TMetric</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Apps & Integrations</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Support</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Pricing</a>
+                    <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Blog</a>
+                </div>
+                <div class="hidden sm:flex sm:items-center">
+                    <a href="#" class="text-gray-500 hover:text-gray-700 px-4 py-2 text-sm font-medium">Log In</a>
+                    <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Sign Up</a>
+                    <a href="#" class="ml-4 bg-gray-100 text-blue-500 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Book a Demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="mt-16 max-w-7xl mx-auto p-8 fade-in">
+        <div class="flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl font-bold text-gray-900">Empower your Team with Time Tracking</h1>
+                <p class="mt-4 text-gray-700">TMetric streamlines your team work so you can focus on what matters</p>
+                <div class="mt-8 flex justify-center lg:justify-start relative">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="email" placeholder="Enter your email address" class="p-1 px-14 rounded-l-md border border-gray-300 input-with-icon">
+                    <br>
+                    <!--<button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-700">Get Started</button>-->
+                </div>
+                <br>
+                <button class="bg-blue-500 text-white px-10 py-1 rounded-r-md hover:bg-blue-700">Get Started</button>
+                <p class="mt-4 text-gray-500">Fully Functional 30-Day Trial</p>
+            </div>
+            <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+                <img src="https://tmetric.com/media/n4ypp35f/img-home-heading.svg" alt="Dashboard">
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <!-- Awards Section -->
+    <section class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-8">
+                <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
+                <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
+                <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
+                <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
+                <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
+                <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
+                <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-12">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
