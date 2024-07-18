@@ -8,6 +8,14 @@
     href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/14dc840376.js" crossorigin="anonymous"></script>
+
+
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <link rel="icon" type="image/x-icon" href="/images/66984c6a3749ab0009c5219f.png"> -->
 
@@ -40,6 +48,351 @@
         .input-with-icon {
             padding-left: 40px;
         }
+        /* ashish     css         start  */
+        .container {
+  width: 1248px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+/* part  1  */
+.section1 {
+  margin:auto ;
+  width: 100%;
+  margin: auto;
+  /* background-color: rgb(66, 56, 23); */
+  border-bottom: 1px solid #e2e7eb;
+  animation:  scaleUp 0.5s ease-in-out forwards;
+}
+
+
+.part1 {
+    padding-bottom: 80px;   
+    margin: auto;
+}
+
+/* h2 css  */
+div.container .part1 .heading h2{
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0 0 2rem;
+  margin-top: 0;
+  padding: 0;
+  color: #292e33;
+}
+
+/* paragraph css */
+
+div.container .part1 .para p {
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+/* button section 3rd section  */
+
+div.container .thirdsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* button    */
+@keyframes rotate {
+  from {
+    transform: rotatey(0deg); /* Start at 0 degrees rotation */
+  }
+  to {
+    transform: rotatey(360deg); /* Rotate 360 degrees */
+  }
+}
+
+
+div.container .thirdsection button {
+  background-color: #06c;
+  border-color: #06c;
+  margin: 0 0.875rem 1.875rem;
+  cursor: pointer;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-style: none;
+  height: 44px;
+  border-radius: 10px;
+  transition: transform .5s ease;
+}
+div.container .thirdsection button:hover {
+    background-color: rgb(45, 185, 40);
+  transform: scale(1.1); 
+
+animation: rotate 1s ease-in-out;}
+    
+
+div.container .thirdsection button a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+div.container .thirdsection .integration {
+  display: inline-block;
+  vertical-align: top;
+  font-family: sans-serif;
+  color: #3070f0;
+  font-weight: bold;
+  margin: 0 .875rem 1.875rem;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+div.container .thirdsection .integration:hover {
+color: #2f549e;
+}
+
+
+
+
+/* cards section  */
+
+
+div.container .part1 .galary1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:25px ;
+}
+
+div.container .part1 .galary1 .card {
+    border: 1px solid #e2e7eb;
+    border-radius: 12px;
+    background: #fff;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease;
+}
+div.container .part1 .galary1 .card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+}
+
+
+div.container .part1 .galary1 .card img {
+    width: 100px;
+    height: 40px;
+
+}
+
+div.container .part1 .galary1 .card {
+    border: 1px solid #e2e7eb;
+    border-radius: 12px;
+    background: #fff;
+    margin: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1.5s ease, box-shadow 0.5s ease; 
+    animation: slideUp 0.5s ease-in-out forwards; 
+  }
+  
+  @keyframes slideUp {
+    from {
+/* Start hidden off-screen (above) */
+      transform: translateY(100px); 
+      opacity: 0; 
+    }
+    to {
+/* Slide down to its position */
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+  
+
+  
+  div.container .part1 .galary1 .card:hover {
+    transform: scale(1.1, 1.05); 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+/* part 1 end  */
+
+/* part  2             crousal    section 2*/
+
+.section2{
+  margin: auto;
+  width: 100%;
+}
+
+.part2 {
+  padding:0 60px 60px 60px;
+  margin: auto;
+} 
+.part2 h3 {
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+
+.carousel-inner>.carousel-item-active>img {
+  height: 260px;
+  width: 150px;
+  object-fit: contain;
+
+}
+.carousel-inner>.carousel-item-active>p {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.carousel-item-active {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-item-active .left .leftin {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.carousel-item {
+  display: flex;
+}
+
+/* section  3 start  */
+
+.section3 {
+  margin:auto ;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255,242,204);
+  border-top: 1px solid #e2e7eb;
+  
+}
+
+.section3 .container {
+  margin: auto;
+  text-align: center; 
+  padding: 60px;
+  animation:  scaleUp 0.5s ease-in-out forwards;
+
+}
+.section3 .container>h3:nth-child(4) {
+  color: #3070f0;
+}
+
+
+.section3 h3 {
+  margin-bottom: .5rem;
+  font-family:  sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #292e33;
+  margin: 0 0 2rem;
+  font-size:2.25rem;
+}
+
+/* rating start  image settings  */
+.section3 .container img {
+  margin: 0 0 2rem;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.section3 .container img:hover {
+  transform: scale(1.1);
+  /* Bouncing effect */
+  animation: bounce 0.5s ease-in-out infinite alternate; 
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+/* section 4 start  */
+
+.section4 {
+  background-color: #F8F9FA ;
+  margin: auto;
+  
+
+}
+.section4>.container{
+  animation:  scaleUp 0.5s ease-in-out forwards;
+}
+
+
+.section4>.container h4{
+  
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .section4>.container>.galary2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .section4>.container>.galary2>.card{
+    border: none;
+    background-color: transparent;
+  }
+  .section4>.container>.galary2>.card>img {
+    width:  150 ;
+    height:  62;
+    object-fit:cover;
+    padding: 0 8px 15px;
+    border-style:none;
+   
+    /* transition: bounce 0.5s ; */
+  }
+
+  .section4>.container>.galary2>.card>img:hover {
+    /* transform: scale(1.1); */
+    /* Bouncing effect */
+    animation: bounce 0.5s ease-in-out infinite alternate;
+    
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8); /* Start slightly smaller */
+      opacity: 0; /* Start with no transparency */
+    }
+    to {
+      transform: scale(1); /* Scale up to normal size */
+      opacity: 1; /* Full opacity */
+    }
+  }
+/* ashishh css end  */
     </style>
 </head>
 <body >
@@ -107,6 +460,7 @@
             </div>
         </div>
     </section>
+
 
 
 <!-- Abhishek start -->
@@ -578,6 +932,124 @@
   </section>
 
 <!-- Abhishek end -->
+
+ <!-- ashish start -->
+ <section class="section1">
+  <div class="container">
+      <div class="part1">
+          <div class="heading">
+              <h2>Integrate time tracker tool with 50+ popular services</h2>
+          </div>
+          <div class="para">
+              <p>TMetric integrates with dozens of services, which lets you measure progress and activity in any tool you use.</p>
+          </div>
+          <div class="thirdsection">
+              <button>
+                  <a href="https://id.tmetric.com/core/register?redirect_uri=%2fcore%2fconnect%2fauthorize%2fcallback%3fclient_id%3dwebapp%26redirect_uri%3dhttps%253A%252F%252Fapp.tmetric.com%252Fcallback%26response_type%3dcode%2520id_token%26scope%3dopenid%2520email%2520profile%2520offline_access%2520main_api%26response_mode%3dform_post%26nonce%3d638568263317579546.NmUyYTllODEtZmQxOS00YzA2LWI0ZmEtNjhiYjQ5MjQwNGEwNmY0MDk3NDktMTZhOS00MDFlLWE0ODctYzAxZjY2YjEzZDEx%26acr_values%3dregister%253A%26state%3dCfDJ8Jb9XPB-a0NIpSXszQQu_0-laPRFlgeq-J7m5IXK8AQK1Eo_TwG1wJVULrL9rkk8EIFccpwuVZQUoI3gJv9b0fi48wgBitYdv8Hm1Zzi3ZI_FDuV4w-_Q89ffk5ZiABVUHRdjQGegYhqfqw5BtEKP1Mdm9ra-JaUYjFIWeWlh059SogUqILLm-skyKq6ODXiWxm6mK0mztF57Zh0NPSyqwAop06J1DtUSTdGBYJtmqDE9r_m6fTShlQzaBdXwlk7Hw4Qh8pcIw6AuWD6SAKt6BGkQAi7xdXlHbEgkefBv7_RZMhvpH9FeCaNjASrMOLxzQLRaMgyOfXSPfnpR5SxJCBTSwUFXrij8w6-xVRzCaN7zflK9vvHc_B5ugPVJuveHw1WR4wl1yrGJZq3e1kx2JmFeZYDOUUmyNHbzZDrUzMIFfPRJve-yw6Hj63HdH_P8A%26x-client-SKU%3dID_NET6_0%26x-client-ver%3d6.35.0.0#_ga=2.1128434.279505755.1721227489-888438922.1720857761">Start Free trial</a>
+              </button>
+              <a class="integration" href="https://tmetric.com/integrations">Explore all integrations  <i class="fa-solid fa-arrow-right"></i> </a>
+          </div>
+
+
+          <div class="galary1">
+
+              <div class="card"><img src="https://tmetric.com/media/dkgp52u1/logo-google-workspace.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/xw4hqraq/logo-google-keep.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/smflyk5w/logo-integration-github.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/caxbzjss/logo-integration-jira.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/aebf4s5m/gitlab-logo-2023.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/zbyntttc/logo-google-docs.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg" alt="logo"></div>
+              <div class="card"><img src="https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg" alt="logo"></div>
+
+          </div>
+      </div>
+  </div>
+
+</section>
+
+<section class="section2">
+<div class="container">
+  <div class="part2">
+      <h3>Why track time with TIMETRAIL</h3>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item-active">
+              <div class="left">
+            <p>TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.</p>
+              <div class="leftin">
+                  <div>
+            <p>Linda Förster, project manager at Medudy</p>
+            <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="">
+          </div>
+          <div><a href="">read full story  <i class="fa-solid fa-arrow-right"></i> </a></div>
+          </div>
+          </div>
+            <img class="d-block w-100" src="https://tmetric.com/media/2nupm14g/software_developers_photo.jpg" alt="First slide">
+          </div>
+          <!-- <div class="carousel-item">
+            <p>We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels.</p>
+            <img class="d-block w-100" src="https://tmetric.com/media/dhbotvr1/photo-marketers.png" alt="Second slide">
+          </div>
+          </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+  <section class="section3">
+      <div class="container">
+<h3>Read Hundreds of Reviews</h3>
+<img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg" alt="star">
+<h3>4.5 Customer Rating</h3>
+<h3>242 Reviews</h3>
+</div>
+</section>
+
+
+<section class="section4">
+  <div class="container">
+      <h4>Used and trusted by 3000+ businesses in the world</h4>
+  <div class="galary2">
+      <div class="card"><img src="https://tmetric.com/media/wlmpffzm/logo_business_endygo.png" alt="endygo- logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png" alt="indicate -logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/eozchehq/logo_business_pulso.png" alt="pulso -logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png" alt="media -logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg" alt="gigital -logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg" alt="FRESHLAB-logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg" alt="mvad -logo"></div>
+      <div class="card"><img src="https://tmetric.com/media/nvalaok1/logo_business_swaven.png" alt="swaven -logo"></div>
+     
+  </div>
+  </div>
+</section>
+
+
+
+<!-- ashish                      end  -->
 
 
 </body>
