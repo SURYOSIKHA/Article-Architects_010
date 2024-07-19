@@ -38,6 +38,7 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+/* shikha     css         start  */
 
         .fade-in {
             animation: fadeIn 2s ease-in;
@@ -46,7 +47,7 @@ body {
        .icon {
             position: absolute;
             top: 50%;
-            left: 12px;
+            left: 10px;
             transform: translateY(-50%);
             color: gray;
         }
@@ -54,6 +55,12 @@ body {
         .input-with-icon {
             padding-left: 40px;
         }
+        .badge-7 {
+        margin: 0 auto;
+
+    }
+    /* shikha     css         start  */
+
         /* ashish     css         start  */
         .container {
   width: 1248px;
@@ -539,29 +546,45 @@ animation: shine-effect 0.4s forwards;
     </style>
 </head>
 <body >
-    <div class="bg-yellow-200">
-
+  <!-- Shikha start -->
+  <div class="bg-yellow-100">
     <!-- Navbar -->
     <nav class="bg-white fixed top-0 w-full shadow-lg z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <img class="h-20 w-40" src="./Timetrail_logo-removebg-preview.png" alt="TMetric Logo">
+                        <img class="h-22 w-40" src="./Timetrail_logo-removebg-preview.png" alt="TMetric Logo">
                     </div>
                 </div>
-                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <div class="hidden md:flex sm:ml-6 sm:space-x-8">
                     <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Why TMetric</a>
                     <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Apps & Integrations</a>
                     <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Support</a>
                     <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Pricing</a>
                     <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 inline-flex items-center px-1 pt-1 text-sm font-medium">Blog</a>
                 </div>
-                <div class="hidden sm:flex sm:items-center">
+                <div class="hidden md:flex sm:items-center">
                     <a href="#" class="text-gray-500 hover:text-gray-700 px-4 py-2 text-sm font-medium">Log In</a>
                     <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Sign Up</a>
                     <a href="#" class="ml-4 bg-gray-100 text-blue-500 px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-200">Book a Demo</a>
                 </div>
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Why TMetric</a>
+                <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Support</a>
+                <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Pricing</a>
+                <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Blog</a>
+                <a href="#" class="text-gray-500 hover:text-gray-700 block pl-3 pr-4 py-2 text-base font-medium">Log In</a>
+                <a href="#" class="bg-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700">Sign Up</a>
+                <a href="#" class="mt-1 bg-gray-100 text-blue-500 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200">Book a Demo</a>
             </div>
         </div>
     </nav>
@@ -572,14 +595,16 @@ animation: shine-effect 0.4s forwards;
             <div class="lg:w-1/2 text-center lg:text-left">
                 <h1 class="text-4xl font-bold text-gray-900">Empower your Team with Time Tracking</h1>
                 <p class="mt-4 text-gray-700">TMetric streamlines your team work so you can focus on what matters</p>
-                <div class="mt-8 flex justify-center lg:justify-start relative">
-                    <i class="fas fa-envelope icon"></i>
-                    <input type="email" placeholder="Enter your email address" class="p-1 px-14 rounded-l-md border border-gray-300 input-with-icon">
-                    <br>
-                    <!--<button class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-700">Get Started</button>-->
-                </div>
-                <br>
-                <button class="bg-blue-500 text-white px-10 py-1 rounded-r-md hover:bg-blue-700">Get Started</button>
+                <div class="mt-8 flex justify-center lg:justify-start">
+                  <div class="relative">
+                      <!-- <i class="fas fa-envelope icon">--><input type="email" placeholder="Enter your email address" class="input-with-icon p-3 rounded-l-md border border-gray-300 w-full lg:w-96">
+                  </div><br>
+                  <button class="bg-blue-500 text-white px-8 py-1 rounded-1-md hover:bg-blue-700">Get Started</button>
+              </div>
+              <br>
+              <!-- <button class="bg-blue-500 text-white px-8 py-2 rounded-r-md hover:bg-blue-700">Get Started</button> -->
+              
+                
                 <p class="mt-4 text-gray-500">Fully Functional 30-Day Trial</p>
             </div>
             <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
@@ -592,19 +617,26 @@ animation: shine-effect 0.4s forwards;
     <!-- Awards Section -->
     <section class="bg-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-center space-x-8">
+            <div class="flex justify-center flex-wrap space-x-4 space-y-4 lg:space-y-0 lg:space-x-8">
                 <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
                 <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
                 <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
                 <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
                 <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
                 <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
-                <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-12">
+                <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-14">
             </div>
         </div>
     </section>
 
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
+<!-- Shikha end -->
 
 <!-- Abhishek start -->
 
@@ -1286,7 +1318,7 @@ animation: shine-effect 0.4s forwards;
       </div>
     </div>
   </div>
-
+</div>
 </section>
 
 
