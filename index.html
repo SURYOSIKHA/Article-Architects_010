@@ -62,33 +62,40 @@ body {
     /* shikha     css         start  */
 
         /* ashish     css         start  */
-        .container {
+ /* 
+body {
+  
+  background: linear-gradient(to right, lavender, mistyrose);
+ 
+  }  */
+  
+
+
+.container {
   width: 1248px;
   margin: 0 auto;
   padding: 20px;
   box-sizing: border-box;
 }
 
-
-
 /* part  1  */
 .section1 {
-  margin:auto ;
+  margin: auto;
   width: 100%;
+  height: auto;
   margin: auto;
   /* background-color: rgb(66, 56, 23); */
   border-bottom: 1px solid #e2e7eb;
-  animation:  scaleUp 0.5s ease-in-out forwards;
+  animation: scaleUp 0.5s ease-in-out forwards;
 }
 
-
 .part1 {
-    padding-bottom: 80px;   
-    margin: auto;
+  padding-bottom: 60px;
+  margin: auto;
 }
 
 /* h2 css  */
-div.container .part1 .heading h2{
+div.container .part1 .heading h2 {
   font-weight: bold;
   font-size: 3rem;
   font-family: sans-serif;
@@ -118,17 +125,15 @@ div.container .thirdsection {
   align-items: center;
 }
 
-
 /* button    */
 @keyframes rotate {
   from {
-    transform: rotatey(0deg); /* Start at 0 degrees rotation */
+    transform: rotatey(0deg);
   }
   to {
-    transform: rotatey(360deg); /* Rotate 360 degrees */
+    transform: rotatey(360deg);
   }
 }
-
 
 div.container .thirdsection button {
   background-color: #06c;
@@ -140,22 +145,35 @@ div.container .thirdsection button {
   border-style: none;
   height: 44px;
   border-radius: 10px;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
-div.container .thirdsection button:hover {
-    background-color: rgb(45, 185, 40);
-  transform: scale(1.1); 
+@media (max-width: 468px) {
+  div.container .thirdsection button {
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 368px) {
+  div.container .thirdsection button {
+    font-size: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
 
-animation: rotate 1s ease-in-out;}
-    
+div.container .thirdsection button:hover {
+  background-color: rgb(45, 185, 40);
+  transform: scale(1.1);
+}
+/* 
+animation: rotate 1s ease-in-out; */
 
 div.container .thirdsection button a {
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
 }
-
-
 
 div.container .thirdsection .integration {
   display: inline-block;
@@ -163,248 +181,484 @@ div.container .thirdsection .integration {
   font-family: sans-serif;
   color: #3070f0;
   font-weight: bold;
-  margin: 0 .875rem 1.875rem;
+  margin: 0 0.875rem 1.875rem;
   text-decoration: none;
   font-size: 20px;
-
 }
 div.container .thirdsection .integration:hover {
-color: #2f549e;
+  color: #2f549e;
 }
-
-
-
 
 /* cards section  */
 
-
 div.container .part1 .galary1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:25px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 div.container .part1 .galary1 .card {
-    border: 1px solid #e2e7eb;
-    border-radius: 12px;
-    background: #fff;
-    margin: 0;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.1s ease;
+  border: 1px solid #e2e7eb;
+  border-radius: 12px;
+  background: #fff;
+  margin: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
 }
 div.container .part1 .galary1 .card:hover {
-    transform: scale(1.1);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 50%;
+  transform: scale(1.1);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* border-radius: 50%; */
 }
 
-
 div.container .part1 .galary1 .card img {
-    width: 100px;
-    height: 40px;
-
+  width: 100px;
+  height: 40px;
 }
 
 div.container .part1 .galary1 .card {
-    border: 1px solid #e2e7eb;
-    border-radius: 12px;
-    background: #fff;
-    margin: 0;
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 1.5s ease, box-shadow 0.5s ease; 
-    animation: slideUp 0.5s ease-in-out forwards; 
-  }
-  
-  @keyframes slideUp {
-    from {
-/* Start hidden off-screen (above) */
-      transform: translateY(100px); 
-      opacity: 0; 
-    }
-    to {
-/* Slide down to its position */
-      transform: translateY(0); 
-      opacity: 1; 
-    }
-  }
-  
-
-  
-  div.container .part1 .galary1 .card:hover {
-    transform: scale(1.1, 1.05); 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-  
-/* part 1 end  */
-
-/* part  2             crousal    section 2*/
-
-.section2{
-  margin: auto;
-  width: 100%;
+  border: 1px solid #e2e7eb;
+  border-radius: 12px;
+  background: #fff;
+  margin: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1.5s ease, box-shadow 0.5s ease;
+  animation: slideUp 0.5s ease-in-out forwards;
 }
 
-.part2 {
-  padding:0 60px 60px 60px;
+@keyframes slideUp {
+  from {
+    /* Start hidden off-screen (above) */
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    /* Slide down to its position */
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+div.container .part1 .galary1 .card:hover {
+  transform: scale(1.1, 1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* part 1 end  */
+
+/* part  2        crousal    section 2*/
+
+/* .section2 {
   margin: auto;
-} 
+  width: 100%;
+  height: auto;
+}
+ */
+
+.part2 {
+  padding: 0 60px 60px 60px;
+  margin: auto;
+}
 .part2 h3 {
   text-align: center;
   margin: 0 0 32px;
 }
 
 
-.carousel-inner>.carousel-item-active>img {
-  height: 260px;
-  width: 150px;
-  object-fit: contain;
 
-}
-.carousel-inner>.carousel-item-active>p {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: sans-serif;
-}
-
-.carousel-item-active {
+.buttons {
   display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.buttons .btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.buttons .btn:hover {
+  color: #0056b3;
+  transform: scale(1.05);
+}
+
+.buttons .btn.active {
+  background-color: #fff;
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+.content-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
-.carousel-item-active .left .leftin {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+
+.content-box {
+  display: none;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.carousel-item {
+
+.content-box.active {
   display: flex;
 }
+
+.content-left {
+  width: 65%;
+}
+.content-left .mainp {
+  font-size: 1.25rem;
+    line-height: 1.4;
+}
+.content-left .down p {
+  font-weight: 700; 
+line-height: 1rem;
+font-family:  sans-serif; 
+}
+.content-left img {
+    width: 100px;
+    margin: 10px 0 10px;
+}
+
+.content-right {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.content-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s , box-shadow 0.3s ease-in-out;
+}
+
+.content-right img:hover {
+  transform: scale(1.05);
+  box-shadow: 
+  10px 10px 10px rgba(0, 0, 0, 0.3), /* Increased shadow on hover */
+  -8px -8px 8px rgba(255, 255, 255, 0.8); 
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.down p {
+  margin: 0;
+}
+
+.read-more {
+  color: #0056b3;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more i {
+  margin-left: 5px;
+}
+
+.section2 {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.part2 {
+  padding: 0 60px 60px 60px;
+  margin: auto;
+}
+
+.part2 h3 {
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .content-box {
+    flex-direction: column;
+  }
+
+  .content-left,
+  .content-right {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  
+.content-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  margin-top: 16px;
+}
+
+  .content-left,
+  .content-right {
+    width: 100%;
+  }
+}
+
 
 /* section  3 start  */
 
 .section3 {
-  margin:auto ;
+  margin: auto;
   width: 100%;
+  height: auto;
   text-align: center;
   margin: auto;
-  background-color: rgb(255,242,204);
+  background-color: rgb(255, 242, 204);
   border-top: 1px solid #e2e7eb;
-  
 }
 
 .section3 .container {
   margin: auto;
-  text-align: center; 
+  text-align: center;
   padding: 60px;
-  animation:  scaleUp 0.5s ease-in-out forwards;
-
+  animation: scaleUp 0.5s ease-in-out forwards;
 }
-.section3 .container>h3:nth-child(4) {
+.section3 .container > h3:nth-child(4) {
   color: #3070f0;
 }
 
-
 .section3 h3 {
-  margin-bottom: .5rem;
-  font-family:  sans-serif;
+  margin-bottom: 0.5rem;
+  font-family: sans-serif;
   font-weight: 600;
   line-height: 1.2;
   color: #292e33;
   margin: 0 0 2rem;
-  font-size:2.25rem;
+  font-size: 2.25rem;
 }
 
 /* rating start  image settings  */
-.section3 .container img {
+.section3 .container .star img {
   margin: 0 0 2rem;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
+  @media (max-width: 478px) {
+    width: 65%;
+  }
 }
+
 .section3 .container img:hover {
   transform: scale(1.1);
   /* Bouncing effect */
-  animation: bounce 0.5s ease-in-out infinite alternate; 
+  animation: bounce 0.5s ease-in-out infinite alternate;
 }
 
 @keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-
 
 /* section 4 start  */
 
 .section4 {
-  background-color: #F8F9FA ;
+  background-color: #f8f9fa;
   margin: auto;
-  
-
+  height: auto;
+  width: 100%;
 }
-.section4>.container{
-  animation:  scaleUp 0.5s ease-in-out forwards;
+.section4 > .container {
+  animation: scaleUp 0.5s ease-in-out forwards;
+  padding: 40px 0 33px;
 }
 
+.section4 > .container h4 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  font-family: sans-serif;
+  text-align: center;
+}
 
-.section4>.container h4{
-  
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-size: 1.75rem;
-    line-height: 1.5;
-    font-family: sans-serif;
-    text-align: center;
-  }
+.section4 > .container > .galary2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.section4 > .container > .galary2 > .card {
+  border: none;
+  background-color: transparent;
+}
+.section4 > .container > .galary2 > .card > img {
+  width: 150;
+  height: 62;
+  object-fit: cover;
+  padding: 0 8px 15px;
+  border-style: none;
 
-  .section4>.container>.galary2 {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  .section4>.container>.galary2>.card{
-    border: none;
-    background-color: transparent;
-  }
-  .section4>.container>.galary2>.card>img {
-    width:  150 ;
-    height:  62;
-    object-fit:cover;
-    padding: 0 8px 15px;
-    border-style:none;
-   
-    /* transition: bounce 0.5s ; */
-  }
+  /* transition: bounce 0.5s ; */
+}
 
-  .section4>.container>.galary2>.card>img:hover {
-    /* transform: scale(1.1); */
-    /* Bouncing effect */
-    animation: bounce 0.5s ease-in-out infinite alternate;
-    
-  }
+.section4 > .container > .galary2 > .card > img:hover {
+  /* transform: scale(1.1); */
+  /* Bouncing effect */
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
 
-  @keyframes scaleUp {
-    from {
-      transform: scale(0.8); /* Start slightly smaller */
-      opacity: 0; /* Start with no transparency */
-    }
-    to {
-      transform: scale(1); /* Scale up to normal size */
-      opacity: 1; /* Full opacity */
-    }
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8); /* Start slightly smaller */
+    opacity: 0; /* Start with no transparency */
   }
+  to {
+    transform: scale(1); /* Scale up to normal size */
+    opacity: 1; /* Full opacity */
+  }
+}
+
+/* section 5  */
+
+.section5 {
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+.section5 .container {
+  padding: 100px 0 80px;
+}
+
+.section5 .container h2 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-family: sans-serif;
+  margin: 0 0 12px;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #292e33;
+  animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+.section5 .container .galary3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: slideLeft 0.5s ease-in-out forwards;
+  overflow-x: hidden;
+}
+
+.section5 .container .galary3 .card {
+  margin: 20px;
+  height: 250px;
+  width: 180px;
+  border: 1px solid #e2e6eb;
+  padding: 23px;
+  border-radius: 12px;
+  background: #fff;
+
+  transition: transform 0.15s ease-in-out, box-shadow 0.15 ease-in-out;
+}
+@media (max-width: 480px) {
+  .section5 .container .galary3 .card {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    margin: 0 10px 20px;
+  }
+}
+
+.section5 .container .galary3 .card:hover {
+  transform: scale(2.5);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: shake 0.5s ease-in-out both;
+}
+.section5 .container .galary3 .card img {
+  width: 60px;
+  height: 60px;
+}
+.section5 .container .galary3 .card p {
+  margin: 20px 0 45px;
+  font-family: sans-serif;
+  color: #212529;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  20%,
+  60% {
+    transform: translate3d(-3px, 0, 0);
+  }
+  40%,
+  80% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
 /* ashishh css end  */
 
 /* Abhishek start */
@@ -1238,117 +1492,333 @@ animation: shine-effect 0.4s forwards;
  <!-- ashish start -->
  <section class="section1">
   <div class="container">
-      <div class="part1">
-          <div class="heading">
-              <h2>Integrate time tracker tool with 50+ popular services</h2>
-          </div>
-          <div class="para">
-              <p>TMetric integrates with dozens of services, which lets you measure progress and activity in any tool you use.</p>
-          </div>
-          <div class="thirdsection">
-              <button>
-                  <a href="https://id.tmetric.com/core/register?redirect_uri=%2fcore%2fconnect%2fauthorize%2fcallback%3fclient_id%3dwebapp%26redirect_uri%3dhttps%253A%252F%252Fapp.tmetric.com%252Fcallback%26response_type%3dcode%2520id_token%26scope%3dopenid%2520email%2520profile%2520offline_access%2520main_api%26response_mode%3dform_post%26nonce%3d638568263317579546.NmUyYTllODEtZmQxOS00YzA2LWI0ZmEtNjhiYjQ5MjQwNGEwNmY0MDk3NDktMTZhOS00MDFlLWE0ODctYzAxZjY2YjEzZDEx%26acr_values%3dregister%253A%26state%3dCfDJ8Jb9XPB-a0NIpSXszQQu_0-laPRFlgeq-J7m5IXK8AQK1Eo_TwG1wJVULrL9rkk8EIFccpwuVZQUoI3gJv9b0fi48wgBitYdv8Hm1Zzi3ZI_FDuV4w-_Q89ffk5ZiABVUHRdjQGegYhqfqw5BtEKP1Mdm9ra-JaUYjFIWeWlh059SogUqILLm-skyKq6ODXiWxm6mK0mztF57Zh0NPSyqwAop06J1DtUSTdGBYJtmqDE9r_m6fTShlQzaBdXwlk7Hw4Qh8pcIw6AuWD6SAKt6BGkQAi7xdXlHbEgkefBv7_RZMhvpH9FeCaNjASrMOLxzQLRaMgyOfXSPfnpR5SxJCBTSwUFXrij8w6-xVRzCaN7zflK9vvHc_B5ugPVJuveHw1WR4wl1yrGJZq3e1kx2JmFeZYDOUUmyNHbzZDrUzMIFfPRJve-yw6Hj63HdH_P8A%26x-client-SKU%3dID_NET6_0%26x-client-ver%3d6.35.0.0#_ga=2.1128434.279505755.1721227489-888438922.1720857761">Start Free trial</a>
-              </button>
-              <a class="integration" href="https://tmetric.com/integrations">Explore all integrations  <i class="fa-solid fa-arrow-right"></i> </a>
-          </div>
-
-
-          <div class="galary1">
-
-              <div class="card"><img src="https://tmetric.com/media/dkgp52u1/logo-google-workspace.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/xw4hqraq/logo-google-keep.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/smflyk5w/logo-integration-github.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/caxbzjss/logo-integration-jira.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/aebf4s5m/gitlab-logo-2023.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/zbyntttc/logo-google-docs.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg" alt="logo"></div>
-              <div class="card"><img src="https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg" alt="logo"></div>
-
-          </div>
+    <div class="part1">
+      <div class="heading">
+        <h2>Integrate time tracker tool with 50+ popular services</h2>
       </div>
-  </div>
-
-</section>
-
-<section class="section2">
-<div class="container">
-  <div class="part2">
-      <h3>Why track time with TIMETRAIL</h3>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item-active">
-              <div class="left">
-            <p>TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.</p>
-              <div class="leftin">
-                  <div>
-            <p>Linda Förster, project manager at Medudy</p>
-            <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="">
-          </div>
-          <div><a href="">read full story  <i class="fa-solid fa-arrow-right"></i> </a></div>
-          </div>
-          </div>
-            <img class="d-block w-100" src="https://tmetric.com/media/2nupm14g/software_developers_photo.jpg" alt="First slide">
-          </div>
-          <!-- <div class="carousel-item">
-            <p>We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels.</p>
-            <img class="d-block w-100" src="https://tmetric.com/media/dhbotvr1/photo-marketers.png" alt="Second slide">
-          </div>
-          </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+      <div class="para">
+        <p>
+          TMetric integrates with dozens of services, which lets you measure
+          progress and activity in any tool you use.
+        </p>
+      </div>
+      <div class="thirdsection">
+        <button>
+          <a
+            href="https://id.tmetric.com/core/register?redirect_uri=%2fcore%2fconnect%2fauthorize%2fcallback%3fclient_id%3dwebapp%26redirect_uri%3dhttps%253A%252F%252Fapp.tmetric.com%252Fcallback%26response_type%3dcode%2520id_token%26scope%3dopenid%2520email%2520profile%2520offline_access%2520main_api%26response_mode%3dform_post%26nonce%3d638568263317579546.NmUyYTllODEtZmQxOS00YzA2LWI0ZmEtNjhiYjQ5MjQwNGEwNmY0MDk3NDktMTZhOS00MDFlLWE0ODctYzAxZjY2YjEzZDEx%26acr_values%3dregister%253A%26state%3dCfDJ8Jb9XPB-a0NIpSXszQQu_0-laPRFlgeq-J7m5IXK8AQK1Eo_TwG1wJVULrL9rkk8EIFccpwuVZQUoI3gJv9b0fi48wgBitYdv8Hm1Zzi3ZI_FDuV4w-_Q89ffk5ZiABVUHRdjQGegYhqfqw5BtEKP1Mdm9ra-JaUYjFIWeWlh059SogUqILLm-skyKq6ODXiWxm6mK0mztF57Zh0NPSyqwAop06J1DtUSTdGBYJtmqDE9r_m6fTShlQzaBdXwlk7Hw4Qh8pcIw6AuWD6SAKt6BGkQAi7xdXlHbEgkefBv7_RZMhvpH9FeCaNjASrMOLxzQLRaMgyOfXSPfnpR5SxJCBTSwUFXrij8w6-xVRzCaN7zflK9vvHc_B5ugPVJuveHw1WR4wl1yrGJZq3e1kx2JmFeZYDOUUmyNHbzZDrUzMIFfPRJve-yw6Hj63HdH_P8A%26x-client-SKU%3dID_NET6_0%26x-client-ver%3d6.35.0.0#_ga=2.1128434.279505755.1721227489-888438922.1720857761"
+            >Start Free trial</a
+          >
+        </button>
+        <a class="integration" href="https://tmetric.com/integrations"
+          >Explore all integrations <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
+      </div>
+
+      <div class="galary1">
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/dkgp52u1/logo-google-workspace.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/fnbggshs/logo-integration-msoffice.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/xw4hqraq/logo-google-keep.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/smflyk5w/logo-integration-github.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/kbrcntmi/logo-integration-excel.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/4aeci1fh/logo-integration-asana.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/caxbzjss/logo-integration-jira.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/aebf4s5m/gitlab-logo-2023.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/zbyntttc/logo-google-docs.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/0bzmfrlf/logo-integration-trello.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/sdaj41fi/logo-integration-redmine.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/1xedbfav/logo-integration-zendesk.svg"
+            alt="logo" />
+        </div>
+        <div class="card">
+          <img
+            src="https://tmetric.com/media/n3dmgi1p/logo-integration-wrike.svg"
+            alt="logo" />
+        </div>
       </div>
     </div>
   </div>
-</div>
 </section>
 
 
-  <section class="section3">
-      <div class="container">
-<h3>Read Hundreds of Reviews</h3>
-<img src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg" alt="star">
-<h3>4.5 Customer Rating</h3>
-<h3>242 Reviews</h3>
-</div>
+<section class="section2">
+  <div class="container">
+    <div class="part2">
+      <h3>Why track time with TIMETRAIL</h3>
+
+      <div class="content-container">
+        <div class="content-box active">
+          <div class="content-left">
+            <p class="mainp">TMetric helps us to track and manage our work time on different projects. It has provided us with a comprehensive overview of how our time is allocated across various tasks. Its reporting features have been particularly helpful in providing us with valuable insights into our work patterns, which has resulted in increased efficiency and productivity.</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/2nupm14g/software_developers_photo.jpg" alt="Software Developers">
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-left">
+            <p class="mainp">We’ve found TMetric to be both user friendly and robust. It was easy to setup which allowed us to begin leveraging the tool immediately. It also provides multiple layers of reporting which provides value to our organization on a number of different levels.</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/dhbotvr1/photo-marketers.png" alt="Marketers">
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-left">
+            <p class="mainp">TMetric is faster, more convenient and cheaper, the support is responsive and they fixed some bugs quickly.</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/bxyho4oy/photo-designers.png" alt="Designers">
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-left">
+            <p class="mainp">I recently transitioned from full-time employee to ‘consultant’. Needed an app to track projects, tasks and generate billing based on our agreement. TMetric handles this elegantly and I can access from my iPhone, iPad or PC- awesome!</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/2pdfttnr/photo-contractors.png" alt="Contractors">
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-left">
+            <p class="mainp">After five months we are very happy with the app and will gladly renew the service. We are still finding new uses for it within our organization and it’s been pivotal for helping us gather better decision-making information, grow our topline and reduce our bottomline.</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/ipkhp5ts/photo-consulting.png" alt="Consultants">
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="content-left">
+            <p class="mainp">There are plenty of available applications to monitor working time. We chose TMetric because of the suitable price and compatibility with Trello and Google Documents, which we use every day in our company.</p>
+            <div class="down">
+              <p>Linda Förster, project manager at Medudy</p>
+              <img src="https://tmetric.com/media/j2klt5pd/img-rating-5.svg" alt="star img">
+              <p class="read-more">Read Full Story <i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="https://tmetric.com/media/1nlgnvyj/photo-freelance.png" alt="Freelancers">
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+          <button class="btn active">Software Developers</button>
+          <button class="btn">Marketers</button>
+          <button class="btn">Designers</button>
+          <button class="btn">Contractors</button>
+          <button class="btn">Consultants</button>
+          <button class="btn">Freelancers</button>
+        </div>
+
+    </div>
+  </div>
 </section>
 
+
+<section class="section3">
+  <div class="container">
+    <h3>Read Hundreds of Reviews</h3>
+    <div class="star">
+      <img
+        src="https://tmetric.com/media/rt1k0zjc/img-rating-4-5.svg"
+        alt="star" />
+    </div>
+    <h3>4.5 Customer Rating</h3>
+    <h3>242 Reviews</h3>
+  </div>
+</section>
 
 <section class="section4">
   <div class="container">
-      <h4>Used and trusted by 3000+ businesses in the world</h4>
-  <div class="galary2">
-      <div class="card"><img src="https://tmetric.com/media/wlmpffzm/logo_business_endygo.png" alt="endygo- logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png" alt="indicate -logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/eozchehq/logo_business_pulso.png" alt="pulso -logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png" alt="media -logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg" alt="gigital -logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg" alt="FRESHLAB-logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg" alt="mvad -logo"></div>
-      <div class="card"><img src="https://tmetric.com/media/nvalaok1/logo_business_swaven.png" alt="swaven -logo"></div>
-     
-  </div>
+    <h4>Used and trusted by 3000+ businesses in the world</h4>
+    <div class="galary2">
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/wlmpffzm/logo_business_endygo.png"
+          alt="endygo- logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/0ddgehbk/logo_business_itsyndicate.png"
+          alt="indicate -logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/eozchehq/logo_business_pulso.png"
+          alt="pulso -logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/rmvok0xh/logo_business_050media.png"
+          alt="media -logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/ccpn231z/logo-business-jot-digi-tal.svg"
+          alt="gigital -logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/z0fhmi1j/logo-business-freshlab.svg"
+          alt="FRESHLAB-logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/xjogm2h2/logo-business-mvad.svg"
+          alt="mvad -logo" />
+      </div>
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/nvalaok1/logo_business_swaven.png"
+          alt="swaven -logo" />
+      </div>
+    </div>
   </div>
 </section>
 
+<section class="section5">
+  <div class="container">
+    <h2>Why choose TMetric?</h2>
+    <div class="galary3">
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/zrvmvbl3/icon-straightforward.svg"
+          alt="logo" />
+        <p>The most straightforward time tracking app</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/opdfdo3l/icon-platforms.svg"
+          alt="logo" />
+        <p>The most straightforward time tracking app</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/igkmpmix/icon-freetrial.svg"
+          alt="logo" />
+        <p>The most straightforward time tracking app</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/htxfmpoe/icon-reasonableprice.svg"
+          alt="logo" />
+        <p>The most straightforward time tracking app</p>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://tmetric.com/media/0uyowzzu/icon-multilang.svg"
+          alt="logo" />
+        <p>The most straightforward time tracking app</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const buttons = document.querySelectorAll('.btn');
+  const contentBoxes = document.querySelectorAll('.content-box');
+
+  // Set the first button and content box as active by default
+  buttons[0].classList.add('active');
+  contentBoxes[0].classList.add('active');
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons and content boxes
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contentBoxes.forEach(box => box.classList.remove('active'));
+
+      // Add active class to the clicked button and corresponding content box
+      button.classList.add('active');
+      contentBoxes[index].classList.add('active');
+    });
+  });
+</script>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
 
 
 <!-- ashish                      end  -->
