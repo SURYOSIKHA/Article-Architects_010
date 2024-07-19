@@ -37,6 +37,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: linear-gradient(to right, lavender, mistyrose);
 }
 /* shikha     css         start  */
 
@@ -59,6 +60,34 @@ body {
         margin: 0 auto;
 
     }
+    .badge-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .badges {
+        display: flex;
+        animation: continuousSlide 14s linear infinite;
+    }
+
+    .badges img {
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    @keyframes continuousSlide {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
     /* shikha     css         start  */
 
         /* ashish     css         start  */
@@ -988,7 +1017,18 @@ animation: shine-effect 0.4s forwards;
             <div class="flex justify-between h-16">
                 <div class="flex">
                     <div class="flex-shrink-0 flex items-center">
-                        <img class="h-22 w-40" src="./Timetrail_logo-removebg-preview.png" alt="TMetric Logo">
+                        <img class="h-22 w-40" src="./images/timetrial.png" alt="TMetric Logo">
+                        <div class="dropdown ml-4">
+                            <button class="h-8 w-20 btn btn-secondary dropdown-toggle hover:bg-blue-700" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                <i class="fas fa-globe"></i> EN
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Deutsch</a>
+                                <a class="dropdown-item" href="#">Español</a>
+                                <a class="dropdown-item" href="#">Português</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="hidden md:flex sm:ml-6 sm:space-x-8">
@@ -1042,7 +1082,7 @@ animation: shine-effect 0.4s forwards;
                 <p class="mt-4 text-gray-500">Fully Functional 30-Day Trial</p>
             </div>
             <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
-                <img src="https://tmetric.com/media/n4ypp35f/img-home-heading.svg" alt="Dashboard">
+                <img src="./images/main_img.svg" alt="Dashboard">
             </div>
         </div>
     </main>
@@ -1051,14 +1091,30 @@ animation: shine-effect 0.4s forwards;
     <!-- Awards Section -->
     <section class="bg-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-center flex-wrap space-x-4 space-y-4 lg:space-y-0 lg:space-x-8">
-                <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
-                <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
-                <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
-                <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
-                <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
-                <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
-                <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-14">
+            <div class="badge-container">
+                <div class="badges">
+                    <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
+                    <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
+                    <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
+                    <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
+                    <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
+                    <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
+                    <!-- <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-14"> -->
+                    <!-- Duplicates for continuous animation -->
+                    <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
+                    <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
+                    <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
+                    <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
+                    <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
+                    <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
+                    <!-- <img src="https://tmetric.com/media/jfxavlps/getapp-logotype.svg" alt="Badge 7" class="h-14"> -->
+                    <img src="https://tmetric.com/media/1szev2ml/saasworthy_badge_2023.png" alt="Badge 1" class="h-15">
+                    <img src="https://tmetric.com/media/ictk4sl0/goodfirms_badge.png" alt="Badge 2" class="h-15">
+                    <img src="https://tmetric.com/media/v3pnl0hw/crozdesk_badge_2023.png" alt="Badge 3" class="h-15">
+                    <img src="https://tmetric.com/media/0sqdh1qx/g2_badge_2023.png" alt="Badge 4" class="h-15">
+                    <img src="https://tmetric.com/media/cwnfzugf/icon-capterra-shortlist.png" alt="Badge 5" class="h-15">
+                    <img src="https://tmetric.com/media/psxgf3r4/icon-software-advice-frontrunners.png" alt="Badge 6" class="h-15">
+                </div>
             </div>
         </div>
     </section>
@@ -1069,6 +1125,9 @@ animation: shine-effect 0.4s forwards;
             menu.classList.toggle('hidden');
         });
     </script>
+    
+
+<!-- Shikha end -->
 
 <!-- Shikha end -->
 
