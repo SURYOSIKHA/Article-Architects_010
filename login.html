@@ -1,0 +1,287 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+<title>Login</title>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f6f7f8;
+  }
+  #login {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #final {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f5fc;
+  }
+  #final img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #box {
+    flex: 1;
+    padding: 40px;
+    padding-top: 0;
+  }
+  #part1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #part1 img {
+    height: 150px;
+    width: 170px;
+    margin-bottom: 0;
+  }
+  #part1 p {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 15px;
+  }
+  #p2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #p2 h4 {
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 5px;
+  }
+  #p2 input {
+    width: 100%;
+    height: 35px;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background-color: #05060f0a;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  #p2 input:hover, #p2 input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  .input-group:hover .label, #p2 input:focus {
+    color: #05060fc2;
+  }
+  #p2 button {
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #3070f0;
+    transition: background-color 0.3s ease;
+  }
+  #p2 button:hover {
+    cursor: pointer;
+    background-color: #1952c3;
+  }
+  #line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: lightgray;
+    font-weight: bold;
+  }
+  .or {
+    color: darkgray;
+    padding: 6px;
+  }
+  #p3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  #p3 div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    font-size: 16px;
+    color: grey;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #p3 div:hover {
+    background-color: lightgray;
+  }
+  #last {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  #last a {
+    text-decoration: none;
+    color: #3070f0;
+    transition: color 0.3s ease;
+    margin: 0 5px;
+  }
+  #last a:hover {
+    color: #1952c3;
+  }
+  #privacy {
+    text-align: center;
+    color: #3070f0;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  #privacy:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+    #login {
+      flex-direction: column;
+    }
+    #final {
+      display: none;
+    }
+    #box {
+      width: 100%;
+      padding: 20px;
+    }
+    #part1 p {
+      font-size: 24px;
+      
+    }
+    #p2 h4 {
+      font-size: 16px;
+    }
+    #p2 input {
+      height: 35px;
+      font-size: 14px;
+    }
+    #p2 button {
+      height: 40px;
+      font-size: 14px;
+    }
+    #p3 div {
+      height: 40px;
+      font-size: 14px;
+    }
+    #last {
+      font-size: 14px;
+    }
+    #privacy {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 480px) {
+    #box {
+      padding: 10px;
+    }
+    #part1 p {
+      font-size: 20px;
+    }
+    #p2 h4 {
+      font-size: 14px;
+    }
+    #p2 input {
+      height: 30px;
+      font-size: 12px;
+    }
+    #p2 button {
+      height: 35px;
+      font-size: 12px;
+    }
+    #p3 div {
+      height: 35px;
+      font-size: 12px;
+    }
+    #last {
+      font-size: 12px;
+    }
+    #privacy {
+      font-size: 12px;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="login">
+  <div id="final">
+    <img src="https://img.freepik.com/premium-vector/woman-works-office_185320-374.jpg" alt="Login" />
+  </div>
+  <div id="box">
+    <div id="part1">
+      <a href="../index.html"><img src="./images/66984c6a3749ab0009c5219f.png" alt="Logo" /></a>
+      <p style="font-weight: 700; padding-bottom: 20px;">Log into Time-Trail</p>
+    </div>
+    <div id="error"></div>
+    <div id="part2">
+      <div id="p2">
+        <h4>Email</h4>
+        <input type="email" id="email" placeholder="Enter Email" />
+        <h4>Password</h4>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+        />
+        <button id="login-submit">Log In</button>
+      </div>
+    </div>
+    <br />
+    <div id="part3">
+      <div id="line">
+        <p>————————————————</p>
+        <p class="or">or</p>
+        <p>————————————————</p>
+      </div>
+      
+      <div id="p3">
+        <div>
+          <img src="https://id.tmetric.com/images/google_logo.svg" alt="Google logo" />
+          <p>Log In with Google</p>
+        </div>
+        <div>
+          <img src="https://id.tmetric.com/images/microsoft_logo.svg" alt="Microsoft logo" />
+          <p>Log In with Microsoft</p>
+        </div>
+        <div>
+          <img src="https://id.tmetric.com/images/apple_logo.svg" alt="Apple logo" />
+          <p>Log In with Apple</p>
+        </div>
+      </div>
+      <br />
+      <div id="last">
+        <a href="#">Can't Log In?</a>
+        <a href="../html/signup.html">Sign Up</a>
+      </div>
+    </div>
+    <p id="privacy">Privacy Policy</p>
+  </div>
+</div>
+</body>
+</html>
