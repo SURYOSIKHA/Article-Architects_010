@@ -7,39 +7,39 @@ Time-Trail is a web application designed to help users manage their time and tas
 Frontend 
 
 ## Deplolyed App
-Frontend: https://669e1dcb3641c2009b89a9c7--luminous-duckanoo-f0c3f9.netlify.app/  ```
+Frontend: https://669e927da3dc1504082ba412--fancy-gnome-47bdf0.netlify.app/   ```
 
 Figma Frontend: https://669d36999171a69e0c37a6ee--resplendent-sunshine-166089.netlify.app/
 
 ## Directory Structure
-time-trail/
-├─FIGMA/Figma
-       ├─assets/
-           └─(all figma layout images used in the project)
-       ├─ .DS_Store
-       ├─ .gitignore
-       ├─index.css
-       ├─index.css.map
-       ├─index.html
-       ├─ style.css
-       ├─ style.css.map
-       ├─ style.scss          
-├─ images/
-│  └─ (all images used in the project)
-├─ index.html
-├─ index.js
-├─ loading1.html
-├─ login.html
-├─ signup.html
-├─ pricing.html
-├─ blog.html
-├─ worinprogress.html
-├─ pricing.css
-├─ blog.css
-├─ package-lock.json
-├─ .gitignore
-├─ package.json
-└─ README.md
+time-trail/  ```
+├─FIGMA/Figma ```
+       ├─assets/ ```
+           └─(all figma layout images used in the project) ```
+       ├─ .DS_Store  ```
+       ├─ .gitignore  ```
+       ├─index.css    ```
+       ├─index.css.map  ```
+       ├─index.html     ```
+       ├─ style.css     ```
+       ├─ style.css.map   ```
+       ├─ style.scss     ```     
+├─ images/   ```
+│  └─ (all images used in the project)  ```
+├─ index.html   ```
+├─ index.js     ```
+├─ loading1.html    ```
+├─ login.html   ```
+├─ signup.html   ```
+├─ pricing.html   ```
+├─ blog.html    ```
+├─ worinprogress.html   ```
+├─ pricing.css   ```
+├─ blog.css     ```
+├─ package-lock.json    ```
+├─ .gitignore   ```
+├─ package.json   ```
+└─ README.md   
 
 ## Video Walkthrough of the project
 https://drive.google.com/file/d/1Vctjv4_xx2s7s5wzpWmzwkrDqHeXSmB-/view?usp=sharing 
