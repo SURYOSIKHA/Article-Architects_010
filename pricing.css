@@ -48,8 +48,8 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
 .section1 .container .pricehead {
     width: 100%;
     margin: auto;
-    padding-bottom: 40px;
-    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-top: 80px;
 }
 @media screen and (max-width:768px){
     .section1 .container .pricehead{
@@ -71,7 +71,7 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     color: #08031d;
    
 
@@ -90,19 +90,18 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
 .section2 .container .subscription {
   width: 100%;
   margin: auto;
-  padding: 20px;
-  color: grey;
+  padding: 10px;
+  color: #8266c4;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
-
 }
 
 
 .section2 .container .scale {
     width: 100%;
     margin: auto;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -165,15 +164,15 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding: 50px 20px ;
+    padding: 20px 20px ;
 
 }
 
 .section3 .container .galary1 .pricecard {
     width: 300px;
-    height: 480px;
+    height: 420px;
     margin: auto;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     background:white ;
     box-shadow: 0 4px 8px 0 rgba(0, 0,0 ,0.15 ) ;
     border-radius: 10px;
@@ -185,6 +184,14 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
 .section3 .container .galary1 .pricecard:hover {
   transform: scale(1.01) rotate(5deg); /* Scale and tilt right */
 }
+
+.section3 .container .galary1 .pricecard .top {
+    width: 100%;
+    font-size: 30px;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
 .section3 .container .galary1 .pricecard .pricebutton {
     width: 80%;
     height: 40px;
@@ -195,6 +202,8 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
     border-radius: 10px;
     border: none ;
     padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
  
 
   
@@ -202,7 +211,7 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
 }
 .section3 .container .galary1 .pricecard .pricebutton a {
     text-decoration: none;
-    color: #bdc7ab;
+    color: #ffffff;
     
 }
 .section3 .container .galary1 .pricecard .pricebutton a .rupe {
@@ -210,14 +219,12 @@ background: linear-gradient(to right, #f2f2f2, #e2d0e7);
 }
 
 .section3 .container .galary1 .pricecard .pricefeatures .pricecardp {
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
-
-
-
+    /* color: grey; */
 }
 .section3 .container .galary1 .pricecard .pricefeatures {
-    text-align: left;
+    text-align: center;
 }
 
 .section3 .container .galary1 .pricecard .pricefeatures li {
@@ -244,6 +251,8 @@ margin-right: 10px;
 /* 3rd card  */
 .section3 .container .galary1 .pricecard #free {
 color: grey;
+font-size: 30px;
+font-weight: bold;
 }
 .section3 .container .galary1 .pricecard a {
   color: grey;
@@ -508,6 +517,7 @@ padding: 20px ;
 }
 
 .section6 .text{
+    font-size: 30px;
     width:100% ;
     margin: auto;
     padding-top: 50px;
@@ -540,8 +550,8 @@ padding: 20px ;
     margin-bottom: 20px;
   }
 
-  button {
-    padding: 10px 20px;
+  .section6 button {
+    padding: 8px 16px;
     font-size: 16px;
     border: none;
     background-color: #2f67ff;
