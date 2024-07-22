@@ -8,6 +8,7 @@ Frontend
 
 ## Deplolyed App
 Frontend: https://669e1dcb3641c2009b89a9c7--luminous-duckanoo-f0c3f9.netlify.app/
+Figma Frontend: https://669d36999171a69e0c37a6ee--resplendent-sunshine-166089.netlify.app/
 
 ## Directory Structure
 time-trail/
