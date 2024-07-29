@@ -7,7 +7,7 @@ Time-Trail is a web application designed to help users manage their time and tas
 Frontend 
 
 ## Deplolyed App
-Frontend: https://669e927da3dc1504082ba412--fancy-gnome-47bdf0.netlify.app/   ```
+Frontend: https://66a7b0d403f210227e7fe5b8--hilarious-lamington-6e806d.netlify.app   ```
 
 Figma Frontend: https://669d36999171a69e0c37a6ee--resplendent-sunshine-166089.netlify.app/
 
